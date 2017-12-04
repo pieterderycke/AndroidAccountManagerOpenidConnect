@@ -170,6 +170,11 @@ public class SampleAuthenticatorActivity extends AccountAuthenticatorActivity {
                 setResult(RESULT_CANCELED);
                 finish();
             }
+            catch(Exception ex) {
+                Log.e("auth0test", ex.getMessage(), ex);
+                setResult(RESULT_CANCELED);
+                finish();
+            }
         }
 
     }
